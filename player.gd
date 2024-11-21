@@ -7,8 +7,6 @@ signal hit
 signal power_up
 signal bomb
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	screen_size = get_viewport_rect().size
 	hide()
@@ -18,7 +16,6 @@ func start(pos):
 	show()
 	$CollisionShape2D.disabled = false
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var velocity = Vector2.ZERO
 	
