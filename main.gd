@@ -1,12 +1,11 @@
 extends Node
 
-# Variável que referencia a scene do Inimigo para instanciar várias cópias
 @export var enemy_scene: PackedScene
 @export var power_up_scene: PackedScene
 @export var bomb_scene: PackedScene
 
 var score
-var is_speed_buff_active: bool = false  # Controle para evitar buffs acumulados
+var is_speed_buff_active: bool = false  
 
 func new_game():
 	score = 0
